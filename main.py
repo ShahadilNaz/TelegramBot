@@ -10,6 +10,5 @@ bot = telebot.TeleBot(TOKEN)
 def start(msg: telebot.types.Message):
     while True:
         bot.reply_to(msg, f"Hi {msg.chat.first_name}, How are you doing today :)")
-        time.sleep(60)
-
+        
 bot.polling()
